@@ -1,0 +1,219 @@
+/*Colors*/
+.secondaryColor {
+    color: #cc092f;
+}
+
+.btn-primary, .btn-primary:hover {
+    background-color: #426da9;
+    border: none;
+    color: #fff;
+}
+
+.btn-secondary, .btn-secondary:hover {
+    background-color: #cc092f;
+    border: none;
+    color: #fff;
+}
+
+hr {
+    clear: both;
+}
+
+section {
+    padding: 0px 20px;
+}
+
+.primaryColor, a {
+    color: #426da9;
+}
+/*Customized elements*/
+body {
+    background-color: #3b79b8;
+}
+
+header {
+    padding: 5px 20px;
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+}
+
+header * {
+    vertical-align: middle;
+}
+
+    header h1 {
+        font-weight: lighter;
+        font-size: 26px;
+        text-align: center;
+        color: #2b2f6b;
+        margin: 0px;
+    }
+
+.logo {
+    background-image: url(../images/robot.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex: 1 0 auto;
+    background-position: center;
+}
+
+.perfilUsuario {
+    margin-top: 15px;
+}
+
+.loginBox {
+    width: 380px;
+    height: 342px;
+    padding-left: 120px;
+    margin: 100px auto 0px auto;
+}
+
+.appBox {
+    margin: 20px auto;
+    max-width: 1024px;
+}
+
+.robot {
+    /*chatbackgroundimagerobot*/ background-image: url(../images/robot.png);
+    width: 219px;
+    height: 285px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: -230px;
+    margin-top: 40px;
+}
+
+table .btn {
+    margin-left: 3px;
+}
+
+.itemRelation {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    color: #426da9;
+}
+
+footer {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 65px;
+    background-image: url(../images/bg-footer.png);
+    background-repeat: repeat-x;
+}
+
+/*pagina��o da grid-logchat*/
+.pagination-logchat td {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pagination-logchat a, .pagination-logchat span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #428bca;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.pagination-logchat span {
+    color: black;
+}
+
+/*popup*/
+.popupConfirmation {
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+    word-wrap: break-word;
+}
+
+.popup_Buttons {
+    margin: 10px;
+}
+
+.popup_Container {
+    background-color: #ffffff;
+    border: 2px solid #cc092f;
+    box-shadow: 5px 5px 5px #888888;
+    padding: 0px 0px 0px 0px;
+}
+
+.popup_Body {
+    padding: 15px 15px 15px 15px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000000;
+    line-height: 15pt;
+    clear: both;
+    padding: 20px;
+}
+
+.OptionsTag {
+    width: 380px;
+    height: 20px;
+    padding-left: 120px;
+    margin: 100px auto 0px auto;
+    color: cornflowerblue;
+}
+
+#lightbox {
+    background-color: #eee;
+    padding: 10px;
+    border-bottom: 2px solid #666;
+    border-right: 2px solid #666;
+}
+
+#lightboxDetails {
+    font-size: 0.8em;
+    padding-top: 0.4em;
+}
+
+#lightboxCaption {
+    float: left;
+}
+
+#keyboardMsg {
+    float: right;
+}
+
+#lightbox img {
+    border: none;
+}
+
+#overlay img {
+    border: none;
+}
+
+
+#overlay {
+    background-image: url(overlay.png);
+}
+
+* html #overlay {
+    background-color: #000;
+    background-color: transparent;
+    background-image: url(blank.gif);
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+}
+
