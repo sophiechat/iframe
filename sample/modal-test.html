@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Virtual Assistant</title>
+    <meta http-equiv="Content-Type" content="text/html; utf-8" />
+    <meta charset="UTF-8"/>
+    <link rel="shortcut icon" href="Content/images/favicon.png" type="image/x-icon">
+    <link href="Content/css/opensans.css" rel="stylesheet"/>
+    <link href="Content/css/fontawesome/css/font-awesome.css" rel="stylesheet"/>
+    <link href="Content/css/quirk2.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="Content/css/custom.css">
+
+    <!-- <script src="Scripts/modernizr-2.6.2.js"></script> -->
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/idle-timer.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/respond.min.js"></script>
+    <script src="Scripts/config.js"></script>
+    <script src="Scripts/Controllers/ChatterController.js"></script>
+    <script src="Scripts/Chatter/MessagePrintermodal.js"></script> <!-- alterado -->
+    <script src="Scripts/Commands/ICommand.js"></script>
+    <script src="Scripts/Commands/UsefulCommand.js"></script>
+    <script src="Scripts/Commands/ImgCommand.js"></script>
+    <script src="Scripts/Commands/jquerySiteResponse.js"></script>
+    <script src="Scripts/Commands/LinkCommand.js"></script>
+    <script src="Scripts/Commands/NewLineCommand.js"></script>
+    <script src="Scripts/Commands/PasswordCommand.js"></script>
+    <script src="Scripts/Commands/StatisticCommand.js"></script>
+    <script src="Scripts/Commands/UploadCommand.js"></script>
+	<script src="Scripts/Commands/NewDialogCommand.js"></script>
+    <!-- <script src="Scripts/Chatter/chattermodal.js"></script> -->
+    <script src="Scripts/autosize.min.js"></script>
+    <!-- <script src="Scripts/login.js"></script> -->	
+</head> 
+<style>
+    .fundao {
+    background-image: url(Content/images/novo-logo-sophiebk.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-blend-mode: overlay;
+    background-color: #656565;
+}
+    
+</style>
+<body class="fundao">
+       
+          <!-- exemplo com iframe -->
+          <div class="container-fluid conteudo-tela">
+              <div class="janela-modal popup-box chat-popup" id="qnimate" style="display: none;">
+                   <iframe src="https://assistant.sophie.chat/descendents001/Login/GetLogin?login=visitante" frameborder="0" width="100%" height="100%" style="overflow: hidden; border-radius: 0.5em;"></iframe>
+              </div>
+
+            <!-- exemplo chatter com html css js personalizados inseridos diretamente 
+            <div class="janela-modal popup-box chat-popup" id="qnimate">
+            
+                    <header>
+                            <div class="headerpanel" style="border-bottom: 1px solid #00bfcf; width: 100%; position: relative;">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                            <img src="Content/images/avatar-sophie.png" alt="" class="img-circle center-block" style="height: 50px;">
+                                            <span class="user-online-status" style="left: 61%;top: 66%;"></span>
+                                    </div>
+                                    <div class="col-xs-3 hidden-xs" style="position: relative; right: 20px;">
+                                            <h4 class="text-left">Sophie</h4>
+                                            <h6 class="text-left">Assistente virtual</h6>
+                                    </div> 
+                                    <div class="col-xs-3 hidden-sm hidden-md hidden-lg" style="position: relative; right: 16px;">
+                                            <h4 class="text-left">Sophie</h4>
+                                            <h6 class="text-left">Assistente virtual</h6>
+                                    </div>                       
+                                    <div class="col-xs-2">
+                                            <img src="Content/images/logo-sophie.png" class="center-block logosophie" alt="" style="position: relative; right: 30px;">
+                                    </div>
+                                    <div class="col-xs-5">
+                                        <a href="#" class="btnLogoff esconde"><h6 class="text-right pull-right saida" onclick="">Sair</h6></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                    <form method="post" id="form2" class="pure-form">
+                    
+                                    <div id="chatterDiv" class="chatter" style="height: 425px; position: relative;">
+                                        <div id="pnlHistory" class="chat-box">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    
+                          <div class="container-fluid bottom-input popup-messages-footer">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="panel" style="width: 100%; height: 60px; border-radius: 10px; box-shadow: 2px 4px 20px -4px rgba(0,0,0,0.75); margin-right: 10px; display: inline-block;" onclick="javascript:">
+                                            <div class="panel-body" style="padding-top: 12px;">
+                                                <div data-chatter="bot-status" style="color: white; font-size: 12px;" hidden="">Escreva a sua mensagem aqui</div>
+                                                <textarea autofocus="" rows="1" class="txtQuestion" onfocusin="RemovePlaceHolder()" onfocusout="AddPlaceHolder()" id="txtQuestion" data-chatter="user-question" maxlength="500" autocomplete="off" onkeypress="return VerifyEnter(event);" placeholder="Escreva a sua mensagem aqui"></textarea>
+                                                <img id="btnSend" class="img-responsive recuo send" src="Content/images/send-icon.svg" alt="" style="display: inline-block; width: 40px; cursor: pointer; padding-bottom: 10px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                              
+                        
+                    
+                        <script type="text/javascript">
+                            autosize(document.getElementById("txtQuestion"));
+                        </script>
+
+            </div> 
+
+            <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h6 class="modal-title text-center" id="exampleModalLabel">Contribua para melhorar as respostas da Sophie. Conte-nos o porquê da sua avaliação negativa sobre a resposta</h6>
+                        </div>
+                        <div class="modal-body">
+                          <form>                   
+                            <div class="form-group">
+                              <label for="message-text" class="control-label">Mensagem</label>
+                              <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                          <button type="button" class="btn btn-primary">Enviar</button>
+                        </div>
+                      </div>
+                    </div>
+            </div> -->
+
+              <div class="bubble-ola" style="display: none;">
+                  <p class="text-center" style="margin-bottom: 0px;">Olá. Precisa de ajuda?</p>
+              </div>
+
+              <div class="bubble-nps" style="display: none;">
+                <p class="text-center" style="color: gray;">Avalie nessa escala quais as chances de você indicar nosso serviço para um amigo</p>
+                <div class="btn-demo">
+                    <button class="btn btn-danger btn-icon" title="1"><i class="fa fa-meh-o" style="font-size: 19px;"></i></button>
+                    <button class="btn btn-danger btn-icon" title="2"><i class="fa fa-meh-o" style="font-size: 19px;"></i></button>
+                    <button class="btn btn-danger btn-icon" title="3"><i class="fa fa-meh-o" style="font-size: 19px;"></i></button>
+                    <button class="btn btn-primary btn-icon" title="4"><i class="fa fa-meh-o" style="font-size: 19px;"></i></button>
+                    <button class="btn btn-primary btn-icon" title="5"><i class="fa fa-meh-o" style="font-size: 19px;"></i></button>
+                    <button class="btn btn-primary btn-icon" title="6"><i class="fa fa-meh-o" style="font-size: 19px;"></i></button>
+                    <button class="btn btn-success btn-icon" title="7"><i class="fa fa-smile-o" style="font-size: 19px;"></i></button>
+                    <button class="btn btn-success btn-icon" title="8"><i class="fa fa-smile-o" style="font-size: 19px;"></i></button>
+                    <button class="btn btn-success btn-icon" title="9"><i class="fa fa-smile-o" style="font-size: 19px;"></i></button>
+                    <button class="btn btn-success btn-icon" title="10"><i class="fa fa-smile-o" style="font-size: 19px;"></i></button>
+                </div>
+             </div>
+
+             <div class="bubble-obrigado" style="display: none;">
+                <p class="text-center" style="color: gray; margin-bottom: 0px;">Obrigado pela sua avaliação. Estamos sempre buscando melhorar a sua experiência.</p>
+             </div>
+
+              <div class="btn-modal">
+                <p class="text-center" style="color: white; font-size: 14px; padding-top: 8px;">
+                    <i class="fa fa-comment" aria-hidden="true" style="font-size: 25px; padding: 12px; background-color: navy; border-radius:50%"></i>
+                    <i class="fa fa-times-circle" aria-hidden="true" style="display: none; position: fixed; right: 32px; bottom: 570px;"></i>
+                </p>
+              </div>
+              
+        </div><!-- container-conteudo-tela-fim -->
+
+        
+          
+        
+     <script>
+        $(document).ready( function() {
+
+            //$( ".janela" ).load( "Chattermodal.html?sessionId=63679615894351484655386207");
+        
+
+            $(".fa-comment").click(function(){
+                var janela = $(".janela-modal");
+                janela.stop(true,false).fadeIn();
+                $(".fa-comment").stop(true,false).fadeOut();
+                $(".fa-times-circle").stop(true,false).fadeIn();
+                $(".bubble-ola").hide();
+            });
+            $(".fa-times-circle").click(function(){
+                var janela = $(".janela-modal");
+                janela.stop(true,false).fadeOut();
+                $(".fa-comment").stop(true,false).fadeIn();
+                $(".fa-times-circle").stop(true,false).fadeOut();
+                /* $(".bubble-nps").show(); retirado as carinhas */
+            });
+
+            $(".bubble-ola").delay(1000).stop(true,false).fadeIn(500);
+            $(".bubble-ola").click(function(){
+                var ola = $(".bubble-ola");
+                ola.delay(500).stop(true,false).fadeOut(1000);
+            });
+            $(".btn-icon").one("click", function(){
+                var nps = $(".bubble-nps");
+                var obrigado = $(".bubble-obrigado");
+                nps.remove();
+                obrigado.show();
+                obrigado.delay(3000).fadeOut();
+            });
+
+
+        });
+     </script>    
+
+    </body>
+    
+</html>

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<langs>
+  <en>
+    <send>SEND</send>
+    <title>Virtual Assistant</title>
+    <questionPlaceHolder>Type a message</questionPlaceHolder>
+    <language>Language:</language>
+    <isWriting> is writing...</isWriting>
+    <pleaseType>Please type your message below</pleaseType>
+    <sending>Sending...</sending>
+    <isOffline> is OFFLINE.</isOffline>
+    <selectFile>Select File</selectFile>
+    <selectFiles>Select Files</selectFiles>
+    <sendFile>Send File</sendFile>
+    <sendFiles>Send Files</sendFiles>
+    <cancel>Cancel</cancel>
+    <sendingFiles>Sending Files</sendingFiles>
+    <usersConnected>Users connected:</usersConnected>
+    <welcome>Welcome</welcome>
+    <login>LOGIN</login>
+    <forgotPassword>FORGOT YOUR PASSWORD?</forgotPassword>
+    <resetPassword>RESET PASSWORD</resetPassword>
+    <enterUserName>Enter your user name</enterUserName>
+    <enterPassword>Enter your password</enterPassword>
+    <invalidUser>Invalid username or password</invalidUser>
+  </en>
+  <pt>
+    <send>Enviar</send>
+    <title>Assistente Virtual</title>
+    <questionPlaceHolder>Digite sua mensagem</questionPlaceHolder>
+    <language>Idioma:</language>
+    <isWriting> está escrevendo...</isWriting>
+    <pleaseType>Por favor digite sua mensagem abaixo</pleaseType>
+    <sending>Enviando...</sending>
+    <isOffline> está OFFLINE.</isOffline>
+    <selectFile>Selecionar Arquivo</selectFile>
+    <selectFiles>Selecionar Arquivos</selectFiles>
+    <sendFile>Enviar Arquivo</sendFile>
+    <sendFiles>Enviar Arquivos</sendFiles>
+    <cancel>Cancelar</cancel>
+    <sendingFiles>Enviando Arquivos</sendingFiles>
+    <usersConnected>Usuários conectados:</usersConnected>
+    <welcome>Bem vindo</welcome>
+    <login>ENTRAR</login>
+    <forgotPassword>ESQUECEU SUA SENHA?</forgotPassword>
+    <resetPassword>REDEFINIR SENHA</resetPassword>
+    <enterUserName>Digite seu usuário</enterUserName>
+    <enterPassword>Digite sua senha</enterPassword>
+    <invalidUser>Usuário ou senha Inválidos</invalidUser>
+  </pt>
+
+  <es>
+    <send>Enviar</send>
+    <title>Asistente Virtual</title>
+    <questionPlaceHolder>Escribe tu mensaje</questionPlaceHolder>
+    <language>Idioma:</language>
+    <isWriting> esta escribiendo...</isWriting>
+    <pleaseType>Por favor escriba su mensaje a continuación</pleaseType>
+    <sending>Enviando...</sending>
+    <isOffline> es OFFLINE.</isOffline>
+    <selectFile>Seleccione Archivo</selectFile>
+    <selectFiles>Seleccione Archivos</selectFiles>
+    <sendFile>Enviar Archivo</sendFile>
+    <sendFiles>Enviar Archivos</sendFiles>
+    <cancel>Cancelar</cancel>
+    <sendingFiles>Enviando Archivos</sendingFiles>
+    <usersConnected>Usuarios conectados:</usersConnected>
+    <welcome>Bienvenido</welcome>
+    <login>Iniciar sesión</login>
+    <forgotPassword> ¿Olvidaste tu contraseña?</forgotPassword>
+    <resetPassword>RESTABLECER LA CONTRASEÑA</resetPassword>
+    <enterUserName>Ingresa tu usuario</enterUserName>
+    <enterPassword>Ingresa tu contraseña</enterPassword>
+    <invalidUser>Usuario o contraseña invalido</invalidUser>
+  </es>
+
+  <fr>
+    <send>Envoyer</send>
+    <title>Assistant Virtuel</title>
+    <questionPlaceHolder>Tapez votre message</questionPlaceHolder>
+    <language>La langue:</language>
+    <isWriting> est en train d'écrire...</isWriting>
+    <pleaseType>Veuillez taper votre message ci-dessous</pleaseType>
+    <sending>Envoi...</sending>
+    <isOffline> est OFFLINE.</isOffline>
+    <selectFile>Sélectionnez le fichier</selectFile>
+    <selectFiles>Sélectionnez les fichiers</selectFiles>
+    <sendFile>Envoyer le fichier</sendFile>
+    <sendFiles>Envoyer les fichiers</sendFiles>
+    <cancel>Cancel</cancel>
+    <sendingFiles>Annuler</sendingFiles>
+    <usersConnected>Utilisateurs connectés:</usersConnected>
+    <welcome>Bienvenue</welcome>
+    <login>S'identifier</login>
+    <forgotPassword>Mot de passe oublié?</forgotPassword>
+    <resetPassword>RÉINITIALISER LE MOT DE PASSE</resetPassword>
+    <enterUserName>Entrez votre pseudo ici</enterUserName>
+    <enterPassword>Tapez votre mot de passe</enterPassword>
+    <invalidUser>Nom d'utilisateur ou mot de passe invalide</invalidUser>
+  </fr>
+
+  <zh-CHS>
+    <send>发送</send>
+    <title>虚拟助理</title>
+    <questionPlaceHolder>输入您的消息</questionPlaceHolder>
+    <language>语言:</language>
+    <isWriting> 在写字...</isWriting>
+    <pleaseType>请在下面输入您的信息</pleaseType>
+    <sending>发出...</sending>
+    <isOffline> 离线.</isOffline>
+    <selectFile>选择文件</selectFile>
+    <selectFiles>选择文件</selectFiles>
+    <sendFile>发送文件</sendFile>
+    <sendFiles>发送文件</sendFiles>
+    <cancel>取消</cancel>
+    <sendingFiles>发送文件</sendingFiles>
+    <usersConnected>用户连接:</usersConnected>
+    <welcome>欢迎</welcome>
+    <login>登录</login>
+    <forgotPassword>忘记密码了吗？</forgotPassword>
+    <resetPassword>重设密码</resetPassword>
+    <enterUserName>输入你的用户名</enterUserName>
+    <enterPassword>输入您的密码</enterPassword>
+    <invalidUser>用户名或密码无效</invalidUser>
+  </zh-CHS>
+
+  <ar>
+    <send>إرسال</send>
+    <title>مساعد الظاهري</title>
+    <questionPlaceHolder>اكتب رسالتك</questionPlaceHolder>
+    <language>اللغة:</language>
+    <isWriting>هو الكتابة...</isWriting>
+    <pleaseType>الرجاء كتابه رسالتك أدناه</pleaseType>
+    <sending>إرسال...</sending>
+    <isOffline>غير متصل.</isOffline>
+    <selectFile>حدد ملف</selectFile>
+    <selectFiles>حدد الملفات</selectFiles>
+    <sendFile>إرسال ملف</sendFile>
+    <sendFiles>إرسال الملفات</sendFiles>
+    <cancel>إلغاء</cancel>
+    <sendingFiles>إرسال الملفات</sendingFiles>
+    <usersConnected>المستخدمين المتصلين:</usersConnected>
+    <welcome>أهلا بك</welcome>
+    <login>تسجيل الدخول</login>
+    <forgotPassword>نسيت رقمك السري؟</forgotPassword>
+    <resetPassword>إعادة تعيين كلمة المرور</resetPassword>
+    <enterUserName>أدخل اسم المستخدم الخاص بك</enterUserName>
+    <enterPassword>ادخل رقمك السري</enterPassword>
+    <invalidUser>خطأ في اسم المستخدم أو كلمة مرور</invalidUser>
+  </ar>
+
+  <ko>
+    <send>보내기</send>
+    <title>가상 어시스턴트</title>
+    <questionPlaceholder>메시지 입력</questionPlaceholder>
+    <language>언어:</language>
+    <isWriting>쓰고 있다</isWriting>
+    <pleaseType>아래에 메시지를 입력 하십시오</pleaseType>
+    <sending>보내는</sending>
+    <isOffline>가 오프 라인 상태입니다.</isOffline>
+    <selectFile>파일 선택</selectFile>
+    <selectFiles>파일 선택</selectFiles>
+    <sendFile>파일 보내기</sendFile>
+    <sendFiles>파일 보내기</sendFiles>
+    <cancel>취소</cancel>
+    <sendingFiles>파일 보내기</sendingFiles>
+    <usersConnected>사용자가 연결 되어:</usersConnected>
+    <welcome>환영</welcome>
+    <login>로그인</login>
+    <forgotPassword>비밀번호를 잊어 버렸습니까?</forgotPassword>
+    <resetPassword>암호를 재설정</resetPassword>
+    <enterUserName>사용자 이름을 입력하십시오.</enterUserName>
+    <enterPassword>비밀 번호를 입력하십시오</enterPassword>
+    <invalidUser>잘못된 사용자 이름 또는 비밀번호</invalidUser>
+  </ko>
+
+  <ro>
+    <send>TRIMITE</send>
+    <title>Asistent Virtual</title>
+    <questionPlaceHolder>Scrie un mesaj</questionPlaceHolder>
+    <language>Limba:</language>
+    <isWriting> scrie...</isWriting>
+    <pleaseType>Introduceți mesajul dvs. mai jos</pleaseType>
+    <sending>Trimitere...</sending>
+    <isOffline> este OFFLINE</isOffline>
+    <selectFile>Selectați Fișier</selectFile>
+    <selectFiles>Selectati Fisierele</selectFiles>
+    <sendFile>Trimite Fișier</sendFile>
+    <sendFiles>Trimite Fisierele</sendFiles>
+    <cancel>Anulare</cancel>
+    <sendingFiles>Trimiterea fișierelor</sendingFiles>
+    <usersConnected>Utilizatorii conectați:</usersConnected>
+    <welcome>Bine ati venit</welcome>
+    <login>Logare</login>
+    <forgotPassword>Ti-ai uitat parola?</forgotPassword>
+    <resetPassword>RESETEAZA PAROLA</resetPassword>
+    <enterUserName>Introduceți numele de utilizator</enterUserName>
+    <enterPassword>Introduceți parola</enterPassword>
+    <logoff>Ieși din cont</logoff>
+    <invalidUser>Nume de utilizator sau parola incorecte</invalidUser>
+  </ro>
+
+</langs>
