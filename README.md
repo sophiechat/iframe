@@ -48,7 +48,7 @@ Para instalar você deve seguir os seguintes passos:
 <script>
 	$(document).ready(function () {
 		//Chat URL
-		var _chatterURL = 'your.domain/bot/ChatterWeb/Index?login=user_name';
+		var _chatterURL = 'https://assistant.sophie.chat/<NOMEDOSEUBOT>/ChatterWeb/index?login=visitante';
 
 		//Open Modal
 		$(".fa-comment").click(function () {
@@ -88,9 +88,9 @@ Para instalar você deve seguir os seguintes passos:
 ```
 
 ### 2. Definir a URL do bot:
-Troque o valor da seguinte variável pela URL do bot que deseja carregar o iframe:
+Em <NOMEDOSEUBOT> troque o valor para o nome do bot criado:
 ```javascript
-var _chatterURL = 'your.domain/bot/ChatterWeb/Index?login=user_name';
+var _chatterURL = 'https://assistant.sophie.chat/<NOMEDOSEUBOT>/ChatterWeb/index?login=visitante';
 ```
  **PRONTO**, se você seguiu os passos corretamente você será capaz de ver a tela abaixo:
 
