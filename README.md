@@ -19,10 +19,11 @@ https://cdnjs.com/libraries/jquery/1.11.2
 Ou para ambientes em Wordpress (limitações de acordo com o template, recomendamos o plugin INSERT HEADERS AND FOOTERS)
 <script src="https://sophie.chat/iframe/iframe-wp.js"></script>
 
-Inserir o HTML no footer ou dentro da tag body e dentro da tag iframe colocar o nome do seu bot
+Inserir o HTML no footer ou dentro da tag body. manter a tag iframe com src vazio. 
+Dentro do iframe.js, em NOMEDOSEUBOT colocar o nome do seu bot.
 
     <div class="janela-modal popup-box chat-popup" id="qnimate" style="display: none;">
-                   <iframe src="https://assistant.sophie.chat/NOMEDOSEUBOT/Login/GetLogin?login=visitante" frameborder="0" width="100%" height="100%" style="overflow: hidden; border-radius: 0.5em;"></iframe>
+                   <iframe src="" frameborder="0" width="100%" height="100%" style="overflow: hidden; border-radius: 0.5em;"></iframe>
               </div>            
 
               <div class="bubble-ola" style="display: none;">
